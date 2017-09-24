@@ -1,0 +1,16 @@
+label
+{
+	width: 150px;
+	display: inline-block;
+}
+
+#addPlayer
+{
+	background-color: green;
+	color: white;
+}
+
+input
+{
+	width: 150px;
+}

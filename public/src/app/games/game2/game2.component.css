@@ -1,0 +1,28 @@
+
+table th,td
+{
+	border: 1px solid black;
+}
+
+button
+{
+	width: 100px;
+	padding: 5px;
+}
+
+.undecided
+{
+	background-color: yellow;
+}
+
+.playing
+{
+	background-color: green;
+	color: white;
+}
+
+.not-playing
+{
+	background-color: red;
+	color: white;
+}

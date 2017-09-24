@@ -1,0 +1,20 @@
+{
+  "name": "team_mgr",
+  "version": "1.0.0",
+  "description": "manage team roster and rsvp for a 3 game sereies",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dean Avant",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^1.4.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.12"
+  }
+}

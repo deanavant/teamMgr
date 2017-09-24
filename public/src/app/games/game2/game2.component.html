@@ -1,0 +1,39 @@
+<div class="team-box">
+	<table>
+		<tr>
+			<th>Team Name</th>
+			<th>Actions</th>
+		</tr>
+		<tr *ngFor="let pl of _pserve.players">
+			<td>{{pl.name}}</td>
+			<td>
+				<button *ngIf="pl.g2status==='Playing'" class="playing">
+					Playing
+				</button>
+
+				<button *ngIf="pl.g2status!='Playing'"
+					(click)='updatePlayer(pl,"Playing")'>
+					Playing
+				</button>
+			
+				<button *ngIf="pl.g2status==='Not Playing'" class="not-playing">
+					Not Playing
+				</button>
+
+				<button *ngIf="pl.g2status!='Not Playing'"
+					(click)='updatePlayer(pl,"Not Playing")'>
+					Not Playing
+				</button>
+			
+				<button *ngIf="pl.g2status==='Undecided'" class="undecided">
+					Undecided
+				</button>
+
+				<button *ngIf="pl.g2status!='Undecided'"
+					(click)='updatePlayer(pl,"Undecided")'>
+					Undecided
+				</button>
+			</td>
+		</tr>
+	</table>
+</div>

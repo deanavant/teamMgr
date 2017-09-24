@@ -1,0 +1,17 @@
+
+<main>
+	<table>
+		<tr>
+			<th>Player</th>
+			<th>Preferred Position</th>
+			<th>Actions</th>
+		</tr>
+		<tr *ngFor="let pl of _pserve.players">
+			<td>{{pl.name}}</td>
+			<td>{{pl.position}}</td>
+			<td>
+				<button class="delete" (click)='_pserve.deletePlayer(pl._id)'>Delete</button>
+			</td>
+		</tr>
+	</table>
+</main>
